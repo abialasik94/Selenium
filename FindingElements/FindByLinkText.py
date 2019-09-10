@@ -9,15 +9,15 @@ class FindByLinkText():
             executable_path="/home/adam/Dokumenty/staż/kursy/selenium/geckodriver-v0.24.0-linux64/geckodriver")
         driver.get(baseUrl)
 
-        elementById = driver.find_element_by_id("Login")
-
-        if elementById is not None:
-            print("We found and element")
-        elementByLinkText = driver.find_element_by_partial_link_text("Pract")
+        elementByLinkText = driver.find_element_by_link_text("Login")
 
         if elementByLinkText is not None:
-            print("We found an element by Name")
+            print("We found and element by Link Text")
 
+        elementByPartialLinkText = driver.find_element_by_partial_link_text("Pract")
 
-ff = FindByName()
+        if elementByPartialLinkText is not None:
+            print("We found an element by Partial Link Text")
+
+ff = FindByLinkText()
 ff.test()
