@@ -11,10 +11,10 @@ def getName():
 
     s = Create_Service(CLIENT_SECRET_FILE, API_SERVICE_NAME, API_VERSION, SCOPES)
     gs = s.spreadsheets()
-    rows = gs.values().get(spreadsheetId=gsheetId, range='Local Government').execute()
+    rows = gs.values().get(spreadsheetId=gsheetId, range='Government Agencies').execute()
     data = rows.get('values')
     df = pd.DataFrame(data)
     return(df[0] + ' ' + df[1])
 
 names = getName()
-print(len(names))
+print(names)
