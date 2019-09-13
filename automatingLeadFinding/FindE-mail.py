@@ -20,7 +20,7 @@ class FindEmail():
 
         #for i in range(self.z):
         searchBox.send_keys(self.e)
-        #        searchButton.click()
-         #       driver.get(baseUrl)
+        searchButton.click()
+        #       driver.get(baseUrl)
 Find = FindEmail()
 Find.openGoogle()
