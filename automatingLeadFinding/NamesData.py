@@ -17,4 +17,4 @@ def getName():
     return(df[0] + ' ' + df[1])
 
 names = getName()
-print(names)
+print(len(names))
