@@ -1,3 +1,5 @@
 #Files ignored by git
 *.log
 *.pdf
+*.json
+*.pickle
